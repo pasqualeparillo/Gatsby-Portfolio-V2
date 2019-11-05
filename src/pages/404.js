@@ -1,14 +1,19 @@
-import React from "react"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-const NotFoundPage = () => (
-  <Layout>
+import React from "react";
+import SEO from "../components/seo";
+import Index from "../404/index";
+import { motion } from "framer-motion";
+const NotFoundPage = props => (
+  <motion.div
+    className="lg:w-11/12 w-full flex mx-auto flex-1 overflow-hidden bg-white"
+    exit="exit"
+    enter="enter"
+    initial="exit"
+    key={props.location.pathname}
+  >
+    {console.log(props)}
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+    <Index />
+  </motion.div>
+);
 
-export default NotFoundPage
+export default NotFoundPage;
