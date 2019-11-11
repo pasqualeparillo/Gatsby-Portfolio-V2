@@ -32,16 +32,18 @@ export default function Footer() {
 					whileHover={{ backgroundColor: '#000000', color: '#ffffff' }}
 					whileTap={{ backgroundColor: '#000000', color: '#ffffff' }}
 					initial={{ backgroundColor: '#ffffff', color: '#000000' }}
+					transition={{ duration: 0.2 }}
 				>
-					<p className="  text-base uppercase font-black">Contact</p>
+					<p className="text-base uppercase font-black">Contact</p>
 				</motion.div>
 				<motion.div
 					className="w-1/2 pt-8 pb-6 flex justify-center items-center cursor-pointer"
 					whileHover={{ backgroundColor: '#ffffff', color: '#000000' }}
 					whileTap={{ backgroundColor: '#ffffff', color: '#000000' }}
 					initial={{ backgroundColor: '#000000', color: '#ffffff' }}
+					transition={{ duration: 0.2 }}
 				>
-					<p className="  text-base uppercase font-black">Resume</p>
+					<p className="text-base uppercase font-black">Resume</p>
 				</motion.div>
 			</div>
 		</div>

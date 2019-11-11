@@ -251,6 +251,7 @@ module.exports = {
       ],
     },
     fontSize: {
+      xxs: '0.65rem',
       xs: '0.75rem',
       sm: '0.875rem',
       base: '1rem',
@@ -261,6 +262,9 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      '10vw': '10vw',
+      '13vw': '13vw',
+      '18vw': '18vw',
     },
     fontWeight: {
       hairline: '100',
