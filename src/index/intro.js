@@ -112,12 +112,12 @@ const childFive = {
 };
 export default function Intro() {
 	return (
-		<div className="flex flex-wrap flex-grow relative  lg:flex-row">
+		<div className="flex flex-wrap flex-grow relative lg:flex-row">
 			<div className="lg:w-3/5 w-full lg:h-full h-64 lg:border-b-0 border-b border-black">
-				<motion.div variants={parent} className="w-full h-full flex flex-wrap p-2 relative">
-					<div className="flex flex-col justify-center w-full items-start relative overflow-hidden">
+				<motion.div variants={parent} className="w-full h-full flex flex-wrap relative">
+					<div className="flex flex-col justify-center w-full items-start relative overflow-hidden p-1">
 						<motion.p
-							className="font-black tracking-tighter uppercase absolute z-20 text-blue-800 lg:text-10vw md:text-13vw text-18vw"
+							className="font-black tracking-tighter uppercase absolute z-20 text-blue-800 lg:text-9vw md:text-13vw text-18vw"
 							style={{
 								lineHeight: 0.9,
 								transform: 'translateY(-10%)'
@@ -127,7 +127,7 @@ export default function Intro() {
 						>
 							Developer
 							<motion.span
-								className="absolute right-0 text-white z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-white z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childTwo}
 								style={{
 									lineHeight: 0.9,
@@ -138,7 +138,7 @@ export default function Intro() {
 								Developer
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-yellow-400 z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-yellow-400 z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childThree}
 								style={{
 									lineHeight: 0.9,
@@ -149,7 +149,7 @@ export default function Intro() {
 								Developer
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-red-600 z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-red-600 z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childFour}
 								style={{
 									lineHeight: 0.9,
@@ -160,7 +160,7 @@ export default function Intro() {
 								Developer
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-black z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-black z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childFive}
 								style={{
 									lineHeight: 0.9,
@@ -174,7 +174,7 @@ export default function Intro() {
 					</div>
 					<div className="flex flex-col justify-center w-full items-end relative overflow-hidden">
 						<motion.p
-							className="font-black tracking-tighter uppercase absolute text-blue-800 lg:text-10vw md:text-13vw text-18vw"
+							className="font-black tracking-tighter uppercase absolute text-blue-800 lg:text-9vw md:text-13vw text-18vw"
 							style={{
 								lineHeight: 0.9,
 								transform: 'translateY(-10%)'
@@ -184,7 +184,7 @@ export default function Intro() {
 						>
 							from
 							<motion.span
-								className="absolute right-0 text-white z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-white z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childTwo}
 								style={{
 									lineHeight: 0.9,
@@ -195,7 +195,7 @@ export default function Intro() {
 								From
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-yellow-400 z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-yellow-400 z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childThree}
 								style={{
 									lineHeight: 0.9,
@@ -206,7 +206,7 @@ export default function Intro() {
 								From
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-red-600 z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-red-600 z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childFour}
 								style={{
 									lineHeight: 0.9,
@@ -217,7 +217,7 @@ export default function Intro() {
 								From
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-black z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-black z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childFive}
 								style={{
 									lineHeight: 0.9,
@@ -231,7 +231,7 @@ export default function Intro() {
 					</div>
 					<div className="flex flex-col justify-center w-full items-start relative overflow-hidden">
 						<motion.p
-							className="font-black tracking-tighter uppercase absolute text-blue-800 lg:text-10vw md:text-13vw text-18vw"
+							className="font-black tracking-tighter uppercase absolute text-blue-800 lg:text-9vw md:text-13vw text-18vw"
 							style={{
 								lineHeight: 0.9,
 								transform: 'translateY(-10%)'
@@ -241,7 +241,7 @@ export default function Intro() {
 						>
 							Seattle
 							<motion.span
-								className="absolute right-0 text-white z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-white z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childTwo}
 								style={{
 									lineHeight: 0.9,
@@ -252,7 +252,7 @@ export default function Intro() {
 								Seattle
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-yellow-400 z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-yellow-400 z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childThree}
 								style={{
 									lineHeight: 0.9,
@@ -263,7 +263,7 @@ export default function Intro() {
 								Seattle
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-red-600 z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-red-600 z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childFour}
 								style={{
 									lineHeight: 0.9,
@@ -274,7 +274,7 @@ export default function Intro() {
 								Seattle
 							</motion.span>
 							<motion.span
-								className="absolute right-0 text-black z-10 lg:text-10vw md:text-13vw text-18vw"
+								className="absolute right-0 text-black z-10 lg:text-9vw md:text-13vw text-18vw"
 								variants={childFive}
 								style={{
 									lineHeight: 0.9,

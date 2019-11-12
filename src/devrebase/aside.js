@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
-import { SizeContext } from '../store/size';
+import React from 'react';
 import { motion } from 'framer-motion';
 import MediaQuery from 'react-responsive';
 export default function Aside() {
-	const { footerSize, projectSize } = useContext(SizeContext);
 	const parent = {
 		exit: {
 			opacity: 1,
@@ -51,17 +49,17 @@ export default function Aside() {
 		}
 	};
 	return (
-		<div className="flex lg:flex-grow relative lg:w-auto w-full lg:h-full h-64 font-roboto">
+		<div className="flex lg:flex-grow relative lg:w-auto w-full lg:h-full  font-roboto">
 			<MediaQuery minWidth={992}>
 				<div
 					className="lg:absolute relative w-full flex flex-col justify-end items-end text-black"
-					style={{ height: `calc(100vh - ${footerSize.y}px - 5rem)` }}
+					style={{ height: `calc(100vh - 11rem)` }}
 				>
 					<div className="flex flex-grow h-full w-full flex-1 border-black " />
 					<motion.div
 						variants={parent}
-						className="flex w-full  overflow-hidden"
-						style={{ height: `calc(${projectSize.y}px - ${footerSize.y}px` }}
+						className="flex w-full overflow-hidden"
+						style={{ height: 'calc(20rem - 6rem)' }}
 					>
 						<motion.div
 							className="flex w-1/2 items-center justify-center border-black border-t border-r cursor-pointer "
@@ -89,7 +87,7 @@ export default function Aside() {
 				</div>
 			</MediaQuery>
 			<MediaQuery maxWidth={992}>
-				<div className="relative w-full flex flex-col justify-end items-end text-black">
+				<div className="relative w-full flex flex-col justify-end items-end text-black h-64">
 					<div className="flex flex-grow h-full w-full flex-1 border-black absolute" />
 					<motion.div variants={parent} className="flex w-full overflow-hidden">
 						<motion.div

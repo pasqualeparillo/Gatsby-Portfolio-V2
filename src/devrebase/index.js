@@ -1,6 +1,6 @@
 import React from 'react';
 import Intro from './intro';
-import Projects from './projects';
+import ProjectInfo from './projectInfo';
 import { Link } from 'gatsby';
 import './index.css';
 export default function DevRebase() {
@@ -10,7 +10,7 @@ export default function DevRebase() {
 				404
 			</Link>
 			<Intro />
-			<Projects />
+			<ProjectInfo />
 		</div>
 	);
 }

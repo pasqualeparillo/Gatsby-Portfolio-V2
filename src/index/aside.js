@@ -1,14 +1,12 @@
-import React, { useContext } from 'react';
-import { SizeContext } from '../store/size';
+import React from 'react';
 import MediaQuery from 'react-responsive';
 export default function Aside() {
-	const { footerSize, projectSize } = useContext(SizeContext);
 	return (
 		<div className="flex lg:flex-grow relative lg:w-auto w-full lg:h-full h-64 font-roboto">
 			<MediaQuery minWidth={992}>
 				<div
 					className="lg:absolute relative w-full flex flex-col justify-end items-end text-black"
-					style={{ height: `calc(100vh - ${footerSize.y}px - 5rem)` }}
+					style={{ height: `calc(100vh - 11rem)` }}
 				>
 					<div className="w-full flex flex-col p-4">
 						<p className="text-3vw uppercase break-words tracking-tighter ">Hello,</p>
