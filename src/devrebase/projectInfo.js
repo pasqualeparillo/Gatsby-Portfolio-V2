@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Footer from './footer';
 import { motion } from 'framer-motion';
 import MediaQuery from 'react-responsive';
@@ -51,11 +51,12 @@ const childTwo = {
 };
 export default function ProjectInfo() {
 	return (
-		<motion.div className="flex flex-wrap w-full font-roboto h-80" variants={parent}>
+		<motion.div className="flex flex-wrap w-full font-roboto lg:h-64" variants={parent}>
 			<div className="bottom-0 lg:w-3/5 w-full flex flex-col flex-wrap relative bg-white border-black border-t border-r">
 				<MediaQuery minWidth={992}>
 					<motion.p
 						className="uppercase font-black tracking-tight leading-none absolute right-0 p-4 -mt-12 border-r border-l border-t border-black bg-black text-white z-10"
+						style={{ marginRight: '-1px' }}
 						variants={child}
 					>
 						DevRebase
@@ -79,28 +80,28 @@ export default function ProjectInfo() {
 }
 
 function Info() {
-	const [hovered, setIsHovered] = useState(false);
 	return (
-		<motion.div
-			className="h-full flex flex-1 relative bg-white"
-			variants={childTwo}
-			initial="exit"
-			onMouseEnter={() => setIsHovered(true)}
-			onMouseLeave={() => setIsHovered(false)}
-		>
+		<motion.div className="h-full flex flex-1 relative bg-white" variants={childTwo} initial="exit">
 			<div className="pt-4 lg:px-10 px-2 w-full flex">
 				<div className="flex flex-col w-3/4">
-					<div className="w-1/4 flex justify-between">
+					<div className="lg:w-1/4 w-3/4 flex justify-between">
 						<p className="uppercase font-black py-2">Title:</p>
-						<p className="uppercase font-black py-2">Devrebase</p>
+						<p className="uppercase  py-2">Devrebase</p>
 					</div>
-					<div className="w-1/4 flex justify-between">
+					<div className="lg:w-1/4 w-3/4 flex justify-between">
 						<p className="uppercase font-black py-2">Type:</p>
-						<p className="uppercase font-black py-2">Fullstack</p>
+						<p className="uppercase  py-2">Fullstack</p>
+					</div>
+					<div className="w-full flex flex-col justify-between">
+						<p className="uppercase font-black py-2">About:</p>
+						<p className="uppercase py-2 text-xs">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s
+						</p>
 					</div>
 				</div>
-				<div className="flex flex-col flex-grow">
-					<div className=" flex justify-between">
+				<div className="flex">
+					<div className="lg:flex-row justify-between">
 						<p className="uppercase font-black py-2">Link:</p>
 						<motion.button
 							className="uppercase font-black py-2 px-4 bg-white border border-black"

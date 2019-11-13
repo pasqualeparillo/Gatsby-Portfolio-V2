@@ -1,7 +1,7 @@
 export const ProjectList = [
 	{
 		id: 0,
-		project_name: 'DevRe',
+		project_name: 'DevRebase',
 		project_link: '/devrebase',
 		project_description: 'Job board for developers by developers',
 		project_type: 'Fullstack'

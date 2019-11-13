@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import MediaQuery from 'react-responsive';
+import { Carousel } from './carousel';
+import paginationHook from './paginationHook';
 export default function Aside() {
+	const { nextSlide, prevSlide } = paginationHook();
 	const parent = {
 		exit: {
 			opacity: 1,
@@ -55,11 +58,11 @@ export default function Aside() {
 					className="lg:absolute relative w-full flex flex-col justify-end items-end text-black"
 					style={{ height: `calc(100vh - 11rem)` }}
 				>
-					<div className="flex flex-grow h-full w-full flex-1 border-black " />
+					<Carousel />
 					<motion.div
 						variants={parent}
-						className="flex w-full overflow-hidden"
-						style={{ height: 'calc(20rem - 6rem)' }}
+						className="flex w-full overflow-hidden "
+						style={{ height: 'calc(16rem - 6rem)' }}
 					>
 						<motion.div
 							className="flex w-1/2 items-center justify-center border-black border-t border-r cursor-pointer "
@@ -68,6 +71,7 @@ export default function Aside() {
 							<motion.span
 								className="w-full flex items-center justify-center text-13vw"
 								whileHover={{ backgroundColor: '#000000', color: '#ffffff' }}
+								onClick={prevSlide}
 							>
 								{'<'}
 							</motion.span>
@@ -79,6 +83,7 @@ export default function Aside() {
 							<motion.span
 								className="w-full flex items-center justify-center text-13vw"
 								whileHover={{ backgroundColor: '#000000', color: '#ffffff' }}
+								onClick={nextSlide}
 							>
 								>
 							</motion.span>
@@ -88,26 +93,32 @@ export default function Aside() {
 			</MediaQuery>
 			<MediaQuery maxWidth={992}>
 				<div className="relative w-full flex flex-col justify-end items-end text-black h-64">
-					<div className="flex flex-grow h-full w-full flex-1 border-black absolute" />
-					<motion.div variants={parent} className="flex w-full overflow-hidden">
+					<Carousel />
+					<motion.div variants={parent} className="flex w-full overflow-hidden absolute">
 						<motion.div
-							className="flex w-1/6 h-16 items-center justify-center border-black border-t border-r cursor-pointer z-50"
+							className="flex w-1/6 h-16 items-center justify-center border-black border-t border-r cursor-pointer z-50 overflow-hidden"
 							variants={child}
 						>
 							<motion.span
-								className="w-full flex items-center justify-center text-13vw"
+								className="w-full flex items-center justify-center text-13vw "
+								initial={{ backgroundColor: '#ffffff', color: '#000000' }}
 								whileHover={{ backgroundColor: '#000000', color: '#ffffff' }}
+								whileTap={{ backgroundColor: '#000000', color: '#ffffff' }}
+								onClick={prevSlide}
 							>
 								{'<'}
 							</motion.span>
 						</motion.div>
 						<motion.div
-							className="flex w-1/6 h-16 items-center justify-center border-black border-t border-r cursor-pointer z-50"
+							className="flex w-1/6 h-16 items-center justify-center border-black border-t border-r cursor-pointer z-50 overflow-hidden"
 							variants={child}
 						>
 							<motion.span
-								className="w-full flex items-center justify-center text-13vw"
+								className="w-full flex items-center justify-center text-13vw "
+								initial={{ backgroundColor: '#ffffff', color: '#000000' }}
 								whileHover={{ backgroundColor: '#000000', color: '#ffffff' }}
+								whileTap={{ backgroundColor: '#000000', color: '#ffffff' }}
+								onClick={nextSlide}
 							>
 								>
 							</motion.span>

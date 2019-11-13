@@ -53,7 +53,7 @@ const childTwo = {
 };
 export default function Projects() {
 	return (
-		<motion.div className="flex flex-wrap w-full font-roboto h-80" variants={parent}>
+		<motion.div className="flex flex-wrap w-full font-roboto lg:h-64" variants={parent}>
 			<div className="bottom-0 lg:w-3/5 w-full flex flex-col flex-wrap relative bg-white ">
 				<MediaQuery minWidth={992}>
 					<motion.p
@@ -136,7 +136,7 @@ function Project({ description, name, type, link }) {
 					</div>
 					<div className="border-b border-black w-1/2 mt-6 mb-6" />
 				</div>
-				<div className="h-32 w-full">
+				<div className="h-20 w-full">
 					<p className="leading-normal tracking-tighter ">{description}</p>
 				</div>
 				<motion.div

@@ -21,7 +21,7 @@ const parent = {
 };
 const child = {
 	exit: {
-		y: '-100%',
+		y: '100%',
 		transition: {
 			ease: 'easeInOut',
 			duration: 0.4
@@ -41,14 +41,14 @@ export default function Intro() {
 		<div className="flex flex-wrap flex-grow relative lg:flex-row">
 			<div className="lg:w-3/5 w-full lg:h-full h-64 lg:border-b-0 border-b border-black">
 				<motion.div variants={parent} className="w-full h-full flex flex-wrap relative">
-					<div className="flex flex-col justify-center w-full items-start relative overflow-hidden">
+					<div className="flex flex-col justify-center w-full lg:items-start relative overflow-hidden items-center">
 						<motion.p
-							className="font-black tracking-tighter uppercase absolute z-20 top-0 lg:text-9vw md:text-13vw text-18vw"
+							className="font-black tracking-tighter uppercase absolute z-20 bottom-0 lg:text-9vw md:text-13vw text-18vw"
 							style={{
 								lineHeight: 0.9
 							}}
 							variants={child}
-							initial={{ y: '-100%' }}
+							initial={{ y: '100%' }}
 						>
 							DevRebase
 						</motion.p>
