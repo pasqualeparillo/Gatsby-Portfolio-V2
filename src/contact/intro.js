@@ -126,17 +126,17 @@ export default function Intro() {
 							variants={child}
 							initial={{ y: '100%' }}
 						>
-							Developer
-							<IntroAnimation text={'Developer'} variant={child} color={'text-green-600'} />
-							<IntroAnimation text={'Developer'} variant={childTwo} color={'text-yellow-600'} />
-							<IntroAnimation text={'Developer'} variant={childThree} color={'text-blue-600'} />
-							<IntroAnimation text={'Developer'} variant={childFour} color={'text-red-600'} />
-							<IntroAnimation text={'Developer'} variant={childFive} color={'text-black'} />
+							Email:
+							<IntroAnimation text={'Email:'} variant={child} color={'text-green-600'} />
+							<IntroAnimation text={'Email:'} variant={childTwo} color={'text-yellow-600'} />
+							<IntroAnimation text={'Email:'} variant={childThree} color={'text-blue-600'} />
+							<IntroAnimation text={'Email:'} variant={childFour} color={'text-red-600'} />
+							<IntroAnimation text={'Email:'} variant={childFive} color={'text-black'} />
 						</motion.p>
 					</div>
 					<div className="flex flex-col justify-center w-full items-end relative overflow-hidden">
 						<motion.p
-							className="font-black tracking-tighter uppercase absolute text-blue-800 lg:text-9vw md:text-13vw text-18vw"
+							className="font-black tracking-tighter uppercase absolute text-blue-800 text-9vw"
 							style={{
 								lineHeight: 0.9,
 								transform: 'translateY(-10%)'
@@ -144,12 +144,20 @@ export default function Intro() {
 							variants={child}
 							initial={{ y: '100%' }}
 						>
-							from
-							<IntroAnimation text={'from'} variant={child} color={'text-green-600'} />
-							<IntroAnimation text={'from'} variant={childTwo} color={'text-yellow-600'} />
-							<IntroAnimation text={'from'} variant={childThree} color={'text-blue-600'} />
-							<IntroAnimation text={'from'} variant={childFour} color={'text-red-600'} />
-							<IntroAnimation text={'from'} variant={childFive} color={'text-black'} />
+							patparillo@gmail.com
+							<IntroAnimation text={'patparillo@gmail.com'} variant={child} color={'text-green-600'} />
+							<IntroAnimation
+								text={'patparillo@gmail.com'}
+								variant={childTwo}
+								color={'text-yellow-600'}
+							/>
+							<IntroAnimation
+								text={'patparillo@gmail.com'}
+								variant={childThree}
+								color={'text-blue-600'}
+							/>
+							<IntroAnimation text={'patparillo@gmail.com'} variant={childFour} color={'text-red-600'} />
+							<IntroAnimation text={'patparillo@gmail.com'} variant={childFive} color={'text-black'} />
 						</motion.p>
 					</div>
 					<div className="flex flex-col justify-center w-full items-start relative overflow-hidden">

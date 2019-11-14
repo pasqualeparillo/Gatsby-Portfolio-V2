@@ -52,10 +52,10 @@ export default function Aside() {
 		}
 	};
 	return (
-		<div className="flex lg:flex-grow relative lg:w-auto w-full lg:h-full  font-roboto">
+		<div className="flex lg:flex-grow relative lg:w-auto w-full lg:h-full">
 			<MediaQuery minWidth={992}>
 				<div
-					className="lg:absolute relative w-full flex flex-col justify-end items-end text-black"
+					className="lg:absolute relative w-full flex flex-col justify-end items-end text-black flex-grow"
 					style={{ height: `calc(100vh - 11rem)` }}
 				>
 					<Carousel />
@@ -92,7 +92,10 @@ export default function Aside() {
 				</div>
 			</MediaQuery>
 			<MediaQuery maxWidth={992}>
-				<div className="relative w-full flex flex-col justify-end items-end text-black h-64">
+				<div
+					className="relative w-full flex flex-col justify-end items-end text-black"
+					style={{ height: `20.1rem` }}
+				>
 					<Carousel />
 					<motion.div variants={parent} className="flex w-full overflow-hidden absolute">
 						<motion.div

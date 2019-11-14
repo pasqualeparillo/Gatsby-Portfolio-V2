@@ -55,19 +55,19 @@ export default function ProjectInfo() {
 			<div className="bottom-0 lg:w-3/5 w-full flex flex-col flex-wrap relative bg-white border-black border-t border-r">
 				<MediaQuery minWidth={992}>
 					<motion.p
-						className="uppercase font-black tracking-tight leading-none absolute right-0 p-4 -mt-12 border-r border-l border-t border-black bg-black text-white z-10"
+						className="uppercase font-black tracking-tight leading-none absolute right-0 p-4 -mt-12 bg-black text-white z-10"
 						style={{ marginRight: '-1px' }}
 						variants={child}
 					>
-						DevRebase
+						Live Site
 					</motion.p>
 				</MediaQuery>
 				<MediaQuery maxWidth={992}>
 					<motion.p
-						className="uppercase font-black tracking-tight h-16 leading-none absolute right-0 p-4 -mt-16 border-r border-l border-t border-black bg-black text-white flex items-center z-10"
+						className="uppercase font-black tracking-tight h-16 leading-none absolute right-0 p-4 -mt-16 bg-black text-white flex items-center z-10"
 						variants={child}
 					>
-						DevRebase
+						Live Site
 					</motion.p>
 				</MediaQuery>
 				<motion.div className="min-w-full flex justify-between z-50 bg-white h-full" variants={parent}>
@@ -81,37 +81,25 @@ export default function ProjectInfo() {
 
 function Info() {
 	return (
-		<motion.div className="h-full flex flex-1 relative bg-white" variants={childTwo} initial="exit">
-			<div className="pt-4 lg:px-10 px-2 w-full flex">
-				<div className="flex flex-col w-3/4">
-					<div className="lg:w-1/4 w-3/4 flex justify-between">
-						<p className="uppercase font-black py-2">Title:</p>
-						<p className="uppercase  py-2">Devrebase</p>
-					</div>
-					<div className="lg:w-1/4 w-3/4 flex justify-between">
-						<p className="uppercase font-black py-2">Type:</p>
-						<p className="uppercase  py-2">Fullstack</p>
-					</div>
-					<div className="w-full flex flex-col justify-between">
-						<p className="uppercase font-black py-2">About:</p>
-						<p className="uppercase py-2 text-xs">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-							been the industry's standard dummy text ever since the 1500s
-						</p>
-					</div>
-				</div>
-				<div className="flex">
-					<div className="lg:flex-row justify-between">
-						<p className="uppercase font-black py-2">Link:</p>
-						<motion.button
-							className="uppercase font-black py-2 px-4 bg-white border border-black"
-							whileHover={{ backgroundColor: '#000000', color: '#ffffff' }}
-							whileTap={{ backgroundColor: '#000000', color: '#ffffff' }}
-						>
-							Devrebase
-						</motion.button>
-					</div>
-				</div>
+		<motion.div
+			className="h-full flex flex-1 relative bg-white pt-4 px-4 w-full flex flex-col w-3/4 py-4"
+			variants={childTwo}
+			initial="exit"
+		>
+			<div className="w-full flex ">
+				<p className="uppercase font-black py-2 mr-4">Title:</p>
+				<p className="uppercase py-2">Devrebase</p>
+			</div>
+			<div className="w-full flex ">
+				<p className="uppercase font-black py-2 mr-4">Type:</p>
+				<p className="uppercase  py-2">Fullstack</p>
+			</div>
+			<div className="w-full flex flex-col ">
+				<p className="uppercase font-black py-2">Stack:</p>
+				<p className="uppercase py-2 text-xs">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s
+				</p>
 			</div>
 		</motion.div>
 	);

@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const Layout = ({ children, location }) => (
 	<ContextProvider>
-		<div className="flex flex-col self-center items-center min-h-screen full justify-between relative overflow-hidden bg-white font-sans">
+		<div className="flex flex-col self-center items-center min-h-screen full justify-between relative overflow-hidden bg-white font-roboto">
 			<NavIndex location={location} />
 			<AnimatePresence exitBeforeEnter initial={false}>
 				<motion.div
