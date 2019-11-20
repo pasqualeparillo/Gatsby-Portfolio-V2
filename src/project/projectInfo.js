@@ -51,11 +51,11 @@ const childTwo = {
 };
 export default function ProjectInfo({ data }) {
 	return (
-		<motion.div className="flex flex-wrap w-full font-roboto h-80 border-black border-l" variants={parent}>
-			<div className="bottom-0 lg:w-3/5 w-full flex flex-col flex-wrap relative bg-white border-black border-t border-r">
+		<motion.div className="flex flex-wrap w-full h-80 " variants={parent}>
+			<div className="bottom-0 lg:w-3/5 w-full flex flex-col flex-wrap relative bg-white ">
 				<MediaQuery minWidth={992}>
 					<motion.p
-						className="uppercase font-black tracking-tight leading-none absolute right-0 p-4 -mt-12 bg-black text-white z-10"
+						className="uppercase font-black tracking-widest leading-none absolute right-0 p-4 -mt-12 bg-black text-white z-10 font-bebas"
 						variants={child}
 					>
 						Live Site
@@ -63,13 +63,16 @@ export default function ProjectInfo({ data }) {
 				</MediaQuery>
 				<MediaQuery maxWidth={992}>
 					<motion.p
-						className="uppercase font-black tracking-tight h-16 leading-none absolute right-0 p-4 -mt-16 bg-black text-white flex items-center z-10"
+						className="uppercase font-black tracking-widest h-16 leading-none absolute right-0 p-4 -mt-16 bg-black text-white flex items-center z-10 font-bebas"
 						variants={child}
 					>
 						Live Site
 					</motion.p>
 				</MediaQuery>
-				<motion.div className="flex justify-between z-50 bg-white h-full" variants={parent}>
+				<motion.div
+					className="border-t lg:border-r lg:border-l border-black min-w-full flex justify-between z-50 bg-white h-full"
+					variants={parent}
+				>
 					<Info data={data} />
 				</motion.div>
 			</div>
@@ -87,16 +90,16 @@ function Info({ data }) {
 			initial="exit"
 		>
 			<div className="w-full flex ">
-				<p className="uppercase font-black py-2 mr-4">Title:</p>
-				<p className="uppercase py-2">{data.project_name}</p>
+				<p className="uppercase font-black py-2 mr-4 font-bebas">Title:</p>
+				<p className="uppercase py-2 text-sm font-fira">{data.project_name}</p>
 			</div>
 			<div className="w-full flex ">
-				<p className="uppercase font-black py-2 mr-4">Type:</p>
-				<p className="uppercase  py-2">{projectInfo.project_type}</p>
+				<p className="uppercase font-black py-2 mr-4 font-bebas">Type:</p>
+				<p className="uppercase py-2 text-sm font-fira">{projectInfo.project_type}</p>
 			</div>
 			<div className="w-full flex flex-col ">
-				<p className="uppercase font-black py-2">Stack:</p>
-				<p className="uppercase py-2 text-xs">{projectInfo.project_description}</p>
+				<p className="uppercase font-black py-2 font-bebas">Stack:</p>
+				<p className="uppercase py-2 text-sm font-fira">{projectInfo.project_description}</p>
 			</div>
 		</motion.div>
 	);

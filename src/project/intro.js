@@ -47,7 +47,7 @@ export default function Intro({ data }) {
 				>
 					<div className="flex flex-1 items-end px-2">
 						<motion.p
-							className="font-black tracking-tighter uppercase z-20 lg:text-9vw md:text-13vw text-18vw bottom-0"
+							className="font-black tracking-widest uppercase z-20 lg:text-9vw md:text-13vw text-18vw bottom-0 font-bebas"
 							style={{
 								lineHeight: 0.9
 							}}
@@ -60,7 +60,7 @@ export default function Intro({ data }) {
 					</div>
 
 					<div className="lg:w-3/4 w-full flex flex-col justify-between px-4">
-						<p className="uppercase py-2 text-xs">{projectInfo.project_description_brief}</p>
+						<p className="uppercase py-2 text-xs font-fira">{projectInfo.project_description_brief}</p>
 					</div>
 				</motion.div>
 			</div>

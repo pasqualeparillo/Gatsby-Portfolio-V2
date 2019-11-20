@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function IntroAnimation({ variant, text, color, size }) {
 	return (
 		<motion.span
-			className={color + ' absolute right-0 z-10 leading-none tracking-tighter cursor-pointer ' + size}
+			className={color + ' absolute right-0 z-10 leading-none tracking-widest cursor-pointer ' + size}
 			variants={variant}
 			style={{
 				lineHeight: 0.9,

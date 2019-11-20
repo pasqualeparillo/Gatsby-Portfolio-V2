@@ -27,7 +27,7 @@ export default function NavIndex({ location }) {
 										: { color: '#000000', backgroundColor: '#ffffff' }
 								}
 							>
-								<p className="text-5xl font-black">{'<'}</p>
+								<p className="text-5xl font-black  font-fira">{'<'}</p>
 							</motion.div>
 						</motion.div>
 					) : null}
@@ -48,7 +48,7 @@ export default function NavIndex({ location }) {
 					animate={{ y: 0 }}
 					initial={{ y: '100%' }}
 					transition={{ duration: 0.4 }}
-					className="text-2xl font-black p-4 font-roboto"
+					className="text-2xl font-black p-4 font-fira"
 				>
 					Pasquale Parillo
 				</motion.p>

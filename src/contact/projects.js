@@ -53,22 +53,22 @@ const childTwo = {
 };
 export default function Projects() {
 	return (
-		<motion.div className="flex flex-wrap w-full font-roboto lg:h-80" variants={parent}>
+		<motion.div className="flex flex-wrap w-full   lg:h-80" variants={parent}>
 			<div className="bottom-0 lg:w-3/5 w-full flex flex-col flex-wrap relative bg-white ">
 				<MediaQuery minWidth={992}>
 					<motion.p
-						className="uppercase font-black tracking-tight leading-none absolute right-0 p-4 -mt-12 border-r border-l border-t border-black bg-black text-white z-10"
+						className="uppercase font-black tracking-widest leading-none absolute right-0 p-4 -mt-12 bg-black text-white z-10 font-bebas"
 						variants={child}
-						style={{ marginRight: '-1px' }}
+						style={{ marginLeft: '-1px' }}
 					>
 						Projects
 					</motion.p>
 				</MediaQuery>
 				<MediaQuery maxWidth={992}>
 					<motion.p
-						className="uppercase font-black tracking-tight h-16 leading-none absolute right-0 p-4 -mt-16 border-r border-l border-t border-black bg-black text-white flex items-center z-10"
+						className="uppercase font-black tracking-widest leading-none absolute right-0 p-4 -mt-12 bg-black text-white flex items-center z-10 font-bebas"
 						variants={child}
-						style={{ marginRight: '-1px' }}
+						style={{ marginLeft: '-1px' }}
 					>
 						Projects
 					</motion.p>
@@ -113,12 +113,12 @@ function Project({ description, name, type, link }) {
 				<div className="w-full flex flex-wrap ">
 					<div className="w-full flex flex-wrap justify-start">
 						<div className="w-1/2 flex justify-start">
-							<p className="font-black uppercase leading-none tracking-tighter py-2 lg:text-base md:text-base text-xxs">
+							<p className="font-black uppercase leading-none tracking-widest py-2 lg:text-base md:text-base text-xs font-bebas">
 								Name:
 							</p>
 						</div>
 						<div className="w-1/2 flex justify-start">
-							<p className="uppercase leading-none tracking-tighter py-2 lg:text-base md:text-base text-xxs">
+							<p className="uppercase leading-none tracking-normal py-2 -ml-2 lg:text-base md:text-base text-xs font-fira">
 								{name}
 							</p>
 						</div>
@@ -126,12 +126,12 @@ function Project({ description, name, type, link }) {
 
 					<div className="w-full flex flex-wrap justify-start">
 						<div className="w-1/2 flex justify-start">
-							<p className="font-black uppercase leading-none tracking-tighter py-2 lg:text-base md:text-base text-xxs">
+							<p className="font-black uppercase leading-none tracking-widest py-2 lg:text-base md:text-base text-xs font-bebas">
 								Type:
 							</p>
 						</div>
 						<div className="w-1/2 flex justify-start">
-							<p className="uppercase leading-none tracking-tighter py-2 lg:text-base md:text-base text-xxs">
+							<p className="uppercase leading-none tracking-normal py-2 -ml-2 lg:text-base md:text-base text-xs font-fira">
 								{type}
 							</p>
 						</div>
@@ -139,7 +139,7 @@ function Project({ description, name, type, link }) {
 					<div className="border-b border-black w-1/2 mt-6 mb-6" />
 				</div>
 				<div className="h-20 w-full">
-					<p className="leading-normal tracking-tighter ">{description}</p>
+					<p className="leading-normal tracking-normal font-fira text-sm">{description}</p>
 				</div>
 				<motion.div
 					className="h-10 "

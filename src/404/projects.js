@@ -66,13 +66,13 @@ function Project() {
       />
       <div className="pt-6 lg:pl-10 lg:pr-10 pl-6 pr-6 w-full">
         <div className="lg:w-3/4 w-full">
-          <p className="font-black uppercase leading-none tracking-tighter  ">
+          <p className="font-black uppercase leading-none tracking-normal  ">
             Have One of your own
           </p>
           <div className="border-b border-black w-1/2 mt-6 mb-6" />
         </div>
         <div className=" h-32 lg:w-3/4 w-full">
-          <p className="leading-none tracking-tighter  ">
+          <p className="leading-none tracking-normal  ">
             Grow a vine in your name
           </p>
         </div>

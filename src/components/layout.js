@@ -5,10 +5,11 @@ import NavIndex from '../navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Menu from '../navigation/menu';
+import './layout.css';
 
 const Layout = ({ children, location }) => (
 	<ContextProvider>
-		<div className="flex flex-col self-center items-center min-h-screen full justify-between relative overflow-hiddenfont-roboto">
+		<div className="flex flex-col self-center items-center min-h-screen full justify-between relative overflow-hidden ">
 			<Menu />
 			<NavIndex location={location} />
 			<AnimatePresence exitBeforeEnter initial={false}>
