@@ -1,0 +1,35 @@
+[
+	{
+		"project_name": "devrebase",
+		"data": [
+			{
+				"project_description_brief": "Job board for developers by developers",
+				"project_description": "DevRebase is an open source job board that aggrigates Software Engineering jobs from most available job boards.",
+				"project_stack": [ "Django Rest Framework", "React", "Redis", "Scrapy" ],
+				"project_type": "Fullstack"
+			}
+		]
+	},
+	{
+		"project_name": "portfolio",
+		"data": [
+			{
+				"project_description_brief": "portfolio",
+				"project_description": "Portfolio developed to showcase projects.",
+				"project_stack": [ "Gatsby", "Framer-motion" ],
+				"project_type": "Frontend"
+			}
+		]
+	},
+	{
+		"project_name": "example",
+		"data": [
+			{
+				"project_description_brief": "example",
+				"project_description": "ispum loremy",
+				"project_stack": [ "Gatsby", "Framer-motion" ],
+				"project_type": "Fullstack"
+			}
+		]
+	}
+]

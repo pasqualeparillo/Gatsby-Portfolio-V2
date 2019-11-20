@@ -251,6 +251,7 @@ module.exports = {
 			'4xl': '2.25rem',
 			'5xl': '3rem',
 			'6xl': '4rem',
+			'5vw': '4.68vw',
 			'8vw': '8vw',
 			'9vw': '9vw',
 			'10vw': '10vw',

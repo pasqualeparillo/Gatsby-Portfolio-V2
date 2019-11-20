@@ -13,10 +13,9 @@ export default function Footer() {
 					whileHover={{ backgroundColor: '#000000', color: '#ffffff' }}
 					whileTap={{ backgroundColor: '#000000', color: '#ffffff' }}
 					initial={{ backgroundColor: '#ffffff', color: '#000000' }}
+					onClick={() => navigate('/contact')}
 				>
-					<p className="text-base uppercase font-black" onClick={() => navigate('/contact')}>
-						Contact
-					</p>
+					<p className="text-base uppercase font-black">Contact</p>
 				</motion.div>
 				<motion.div
 					className="w-1/2 pt-4 pb-4 flex justify-center items-center cursor-pointer h-full"
