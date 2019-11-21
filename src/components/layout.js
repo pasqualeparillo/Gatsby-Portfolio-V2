@@ -5,7 +5,7 @@ import NavIndex from '../navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Menu from '../navigation/menu';
-import './layout.css';
+import '../css/style.css';
 
 const Layout = ({ children, location }) => (
 	<ContextProvider>

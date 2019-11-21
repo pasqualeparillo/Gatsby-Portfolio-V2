@@ -1,7 +1,8 @@
 import React from 'react';
-import Aside from './aside';
+import Aside from '../reuseable/aside';
 import { motion } from 'framer-motion';
-import IntroAnimation from './introAnimation';
+import IntroAnimation from '../reuseable/introAnimation';
+import MediaQuery from 'react-responsive';
 
 const parent = {
 	exit: {
@@ -37,6 +38,9 @@ const child = {
 			ease: 'easeInOut',
 			duration: 0.4
 		}
+	},
+	initial: {
+		y: 300
 	}
 };
 const childTwo = {
@@ -172,7 +176,51 @@ export default function Intro() {
 					</div>
 				</motion.div>
 			</div>
-			<Aside />
+			<Aside>
+				<MediaQuery minWidth={992}>
+					<motion.div
+						className="lg:absolute relative w-full flex flex-col justify-end items-end text-black"
+						variants={child}
+						initial={{ y: 300 }}
+						style={{ height: `calc(100vh - 11rem)` }}
+					>
+						<div className="w-full flex flex-col p-4">
+							<p className="text-3vw uppercase break-words tracking-normal  font-fira">Hello,</p>
+							<p className="text-3vw uppercase break-words tracking-normal mt-4  font-fira">
+								My name is Pasquale Parillo
+							</p>
+							<p className="text-3vw uppercase break-words tracking-normal mt-4  font-fira">
+								I am a web developer currently living in Seattle, WA.{' '}
+							</p>
+							<p className="text-3vw uppercase break-words leading-normal tracking-normal mt-4  font-fira">
+								Before becomming a professional developer I had a previous career in IT. This atypical
+								background allows me to think with a user first approach to accessability & design.
+							</p>
+						</div>
+					</motion.div>
+				</MediaQuery>
+				<MediaQuery maxWidth={992}>
+					<motion.div
+						className="relative w-full flex flex-col justify-start items-start text-black"
+						variants={child}
+						initial={{ y: 300 }}
+					>
+						<div className="flex flex-col p-4">
+							<p className="text-sm uppercase break-words tracking-normal  font-fira">Hello,</p>
+							<p className="text-sm uppercase break-words tracking-normal mt-2  font-fira">
+								My name is Pasquale Parillo
+							</p>
+							<p className="text-sm uppercase break-words tracking-normal mt-2  font-fira">
+								I am a web developer currently living in Seattle, WA.{' '}
+							</p>
+							<p className="text-sm uppercase break-words leading-normal tracking-normal mt-2  font-fira">
+								Before becomming a professional developer I had a previous career in IT. This atypical
+								background allows me to think with a user first approach to accessability & design.
+							</p>
+						</div>
+					</motion.div>
+				</MediaQuery>
+			</Aside>
 		</div>
 	);
 }

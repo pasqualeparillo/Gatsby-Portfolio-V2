@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export default function IntroAnimation({ variant, text, color, size }) {
+export default function IntroAnimation({ variant, text, color }) {
 	return (
 		<motion.span
-			className={color + ' absolute right-0 z-10 leading-none tracking-widest cursor-pointer ' + size}
+			className={color + ' absolute right-0 z-10'}
 			variants={variant}
 			style={{
 				lineHeight: 0.9,

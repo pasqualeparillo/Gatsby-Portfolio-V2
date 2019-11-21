@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ImageContext } from '../store/image';
-export default function paginationHook() {
+export default function usePaginationHook() {
 	const { index, setIndex } = useContext(ImageContext);
 	const imgLinks = [
 		'https://via.placeholder.com/150',

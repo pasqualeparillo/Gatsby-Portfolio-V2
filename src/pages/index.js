@@ -1,6 +1,5 @@
 import React from 'react';
 import SEO from '../components/seo';
-import '../css/style.css';
 import Index from '../index/index';
 
 const IndexPage = () => (

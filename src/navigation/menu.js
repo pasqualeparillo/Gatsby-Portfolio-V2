@@ -42,18 +42,19 @@ export default function Menu() {
 					animate="enter"
 					style={{ zIndex: 9999 }}
 				>
-					<motion.div
-						animate={{ opacity: 1 }}
-						initial={{ opacity: 0 }}
-						transition={{ delay: 0.4 }}
-						className="border border-white top-0 left-0 absolute h-20 w-20 lg:ml-40 ml-20"
-						onClick={() => setActive(!active)}
-					>
-						<div className="relative h-full w-full flex items-center justify-center">
-							<button className="text-white text-5xl font-black w-full h-full">{'<'}</button>
-						</div>
-					</motion.div>
-
+					<div className="lg:w-11/12 w-full h-20 flex z-50 overflow-hidden relative mx-auto">
+						<motion.div
+							animate={{ opacity: 1 }}
+							initial={{ opacity: 0 }}
+							transition={{ delay: 0.4 }}
+							className="border border-white top-0 left-0 absolute h-20 w-20 ml-20"
+							onClick={() => setActive(!active)}
+						>
+							<div className="relative h-full w-full flex items-center justify-center">
+								<button className="text-white text-5xl font-black w-full h-full">{'<'}</button>
+							</div>
+						</motion.div>
+					</div>
 					<div className="flex flex-col h-full items-center justify-center align-middle ">
 						<div className="flex flex-col items-start">
 							<motion.p
@@ -61,7 +62,7 @@ export default function Menu() {
 								initial="initial"
 								className="text-white font-black text-5xl font-bebas"
 							>
-								Home{' '}
+								Home
 							</motion.p>
 							<motion.p
 								variants={Child}

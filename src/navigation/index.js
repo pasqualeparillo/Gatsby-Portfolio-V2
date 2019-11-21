@@ -1,9 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { navigate } from 'gatsby';
 import { MenuContext } from '../store/menu';
 export default function NavIndex({ location }) {
-	const [hover, setHover] = useState(false);
 	const { active, setActive } = useContext(MenuContext);
 	return (
 		<div className="lg:w-11/12 w-full h-20 flex z-50 overflow-hidden">
@@ -16,18 +15,13 @@ export default function NavIndex({ location }) {
 							animate={{ opacity: 1 }}
 							className="w-full h-full flex flex cursor-pointer"
 							onClick={() => navigate('/')}
-							onMouseEnter={() => setHover(true)}
-							onMouseLeave={() => setHover(false)}
 						>
 							<motion.div
-								className="w-full h-full flex flex-col justify-center items-center content-center "
-								animate={
-									hover
-										? { color: '#ffffff', backgroundColor: '#000000' }
-										: { color: '#000000', backgroundColor: '#ffffff' }
-								}
+								className="w-full h-full flex flex-col justify-center items-center content-center border-l border-b border-black"
+								initial={{ color: '#ffffff', backgroundColor: '#000000' }}
+								whileHover={{ color: '#000000', backgroundColor: '#ffffff' }}
 							>
-								<p className="text-5xl font-black  font-fira">{'<'}</p>
+								<p className="text-5xl font-black font-fira">{'<'}</p>
 							</motion.div>
 						</motion.div>
 					) : null}

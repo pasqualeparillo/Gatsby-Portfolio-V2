@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import MediaQuery from 'react-responsive';
 import { Carousel } from './carousel';
-import paginationHook from './paginationHook';
+import usePaginationHook from './paginationHook';
 export default function Aside() {
-	const { nextSlide, prevSlide } = paginationHook();
+	const { nextSlide, prevSlide } = usePaginationHook();
 	const parent = {
 		exit: {
 			opacity: 1,

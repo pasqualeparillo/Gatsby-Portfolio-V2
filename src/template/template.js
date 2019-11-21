@@ -6,7 +6,6 @@ export default ({ data }) => {
 	let items = data.allSitePage.edges[0].node.context;
 	return (
 		<div className="w-full flex mx-auto flex-1 overflow-hidden bg-white relative">
-			{console.log(data)}
 			<Project data={items} />
 		</div>
 	);
