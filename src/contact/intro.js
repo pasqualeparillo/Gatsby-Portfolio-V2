@@ -312,10 +312,10 @@ export default function Intro() {
 						style={{ height: `calc(100vh - 11rem)` }}
 					>
 						<div className="w-full flex justify-center flex-col p-4">
-							<p className="font-black leading-none tracking-normal p-1 font-bebas">Social</p>
-							<p className="text-sm leading-none tracking-normal p-1 font-fira">Twitter</p>
-							<p className="text-sm leading-none tracking-normal p-1 font-fira">Linkedin</p>
-							<p className="text-sm leading-none tracking-normal p-1 font-fira">Github</p>
+							<p className="text-2xl font-black leading-none tracking-normal p-1 font-bebas">Social</p>
+							<motion.p whileHover={{x: 2}} className="text-lg cursor-pointer leading-none tracking-normal p-1 font-fira">Twitter</motion.p>
+							<motion.p whileHover={{x: 2}} className="text-lg cursor-pointer leading-none tracking-normal p-1 font-fira">Linkedin</motion.p>
+							<motion.p whileHover={{x: 2}} className="text-lg cursor-pointer leading-none tracking-normal p-1 font-fira">Github</motion.p>
 						</div>
 					</motion.div>
 				</MediaQuery>
@@ -325,10 +325,10 @@ export default function Intro() {
 						variants={child}
 					>
 						<div className="w-full flex justify-center flex-col p-4">
-							<p className="font-black leading-none tracking-normal p-1 font-bebas">Social</p>
-							<p className="text-sm leading-none tracking-normal p-1 font-fira">Twitter</p>
-							<p className="text-sm leading-none tracking-normal p-1 font-fira">Linkedin</p>
-							<p className="text-sm leading-none tracking-normal p-1 font-fira">Github</p>
+							<p className="text-8vw font-black leading-none tracking-normal p-1 font-bebas">Social</p>
+							<motion.p whileHover={{x: 2}} className="text-lg cursor-pointer leading-none tracking-normal p-1 font-fira">Twitter</motion.p>
+							<motion.p whileHover={{x: 2}} className="text-lg cursor-pointer leading-none tracking-normal p-1 font-fira">Linkedin</motion.p>
+							<motion.p whileHover={{x: 2}} className="text-lg cursor-pointer leading-none tracking-normal p-1 font-fira">Github</motion.p>
 						</div>
 					</motion.div>
 				</MediaQuery>
