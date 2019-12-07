@@ -6,20 +6,27 @@ import { Link } from "gatsby";
 export default function Menu() {
   const { active, setActive } = useContext(MenuContext);
   const Parent = {
+    initial: {
+      height: 0
+    },
     exit: {
       height: 0,
       transition: {
-        ease: "easeInOut",
         when: "afterChildren",
-        staggerChildren: 0.2
+        staggerChildren: 0.2,
+        type: "spring",
+        mass: 1,
+        damping: 40
       }
     },
     enter: {
       height: "100vh",
       transition: {
-        ease: "easeInOut",
         when: "beforeChildren",
-        staggerChildren: 0.2
+        staggerChildren: 0.2,
+        type: "spring",
+        mass: 1,
+        damping: 40
       }
     }
   };
@@ -40,6 +47,7 @@ export default function Menu() {
         <motion.div
           className="w-screen overflow-y-hidden absolute bg-black"
           variants={Parent}
+          initial="initial"
           exit="exit"
           animate="enter"
           style={{ zIndex: 9999 }}

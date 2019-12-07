@@ -10,14 +10,20 @@ const parent = {
 		transition: {
 			when: 'afterChildren',
 			delayChildren: 0.4,
-			staggerChildren: 0.1
+			staggerChildren: 0.1,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	},
 	enter: {
 		opacity: 1,
 		transition: {
 			when: 'beforeChildren',
-			staggerChildren: 0.1
+			staggerChildren: 0.1,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	},
 	initial: {
@@ -28,15 +34,17 @@ const child = {
 	exit: {
 		y: 300,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	},
 	enter: {
 		y: 0,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	}
 };
@@ -44,17 +52,19 @@ const childTwo = {
 	exit: {
 		y: 300,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.1
+			delay: 0.1,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	},
 	enter: {
 		y: 0,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.1
+			delay: 0.1,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	}
 };
@@ -62,17 +72,19 @@ const childThree = {
 	exit: {
 		y: 300,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.2
+			delay: 0.2,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	},
 	enter: {
 		y: 0,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.2
+			delay: 0.2,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	}
 };
@@ -80,17 +92,19 @@ const childFour = {
 	exit: {
 		y: 300,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.3
+			delay: 0.3,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	},
 	enter: {
 		y: 0,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.3
+			delay: 0.3,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	}
 };
@@ -98,17 +112,19 @@ const childFive = {
 	exit: {
 		y: 300,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.4
+			delay: 0.4,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	},
 	enter: {
 		y: 0,
 		transition: {
-			ease: 'easeInOut',
-			duration: 0.4,
-			delay: 0.4
+			delay: 0.4,
+			type: "spring",
+			mass: 1,
+			damping: 100,
 		}
 	}
 };

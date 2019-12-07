@@ -41,7 +41,7 @@ export default function NavIndex({ location }) {
         <motion.p
           animate={{ y: 0 }}
           initial={{ y: "100%" }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.4, type: "spring", mass: 2, damping: 100 }}
           className="text-2xl p-4 font-fira cursor-pointer"
         >
           Pasquale Parillo
