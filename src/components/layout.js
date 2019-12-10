@@ -6,9 +6,11 @@ import { AnimatePresence, motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import Menu from '../navigation/menu';
 import '../css/style.css';
+import { SEO } from '../reuseable/SEO';
 
 const Layout = ({ children, location }) => (
 	<ContextProvider>
+		<SEO />
 		<div className="flex flex-col self-center items-center min-h-screen full justify-between relative overflow-hidden ">
 			<Menu />
 			<NavIndex location={location} />
