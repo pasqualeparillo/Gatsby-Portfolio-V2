@@ -12,7 +12,7 @@ const parent = {
 			delayChildren: 0.4,
 			staggerChildren: 0.1,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	},
@@ -22,7 +22,7 @@ const parent = {
 			when: 'beforeChildren',
 			staggerChildren: 0.1,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	},
@@ -35,7 +35,7 @@ const child = {
 		y: 300,
 		transition: {
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	},
@@ -43,7 +43,7 @@ const child = {
 		y: 0,
 		transition: {
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	}
@@ -54,7 +54,7 @@ const childTwo = {
 		transition: {
 			delay: 0.1,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	},
@@ -63,7 +63,7 @@ const childTwo = {
 		transition: {
 			delay: 0.1,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	}
@@ -74,7 +74,7 @@ const childThree = {
 		transition: {
 			delay: 0.2,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	},
@@ -83,7 +83,7 @@ const childThree = {
 		transition: {
 			delay: 0.2,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	}
@@ -94,7 +94,7 @@ const childFour = {
 		transition: {
 			delay: 0.3,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	},
@@ -103,7 +103,7 @@ const childFour = {
 		transition: {
 			delay: 0.3,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	}
@@ -114,7 +114,7 @@ const childFive = {
 		transition: {
 			delay: 0.4,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	},
@@ -123,7 +123,7 @@ const childFive = {
 		transition: {
 			delay: 0.4,
 			type: "spring",
-			mass: 1,
+			mass: .5,
 			damping: 100,
 		}
 	}

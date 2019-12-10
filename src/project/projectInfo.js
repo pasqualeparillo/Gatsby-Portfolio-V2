@@ -25,8 +25,8 @@ const child = {
     transition: {
       delay: 0.4,
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   },
   enter: {
@@ -34,8 +34,8 @@ const child = {
     transition: {
       delay: 0.4,
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   }
 };
@@ -44,16 +44,16 @@ const childTwo = {
     y: "100%",
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   },
   enter: {
     y: 0,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   }
 };

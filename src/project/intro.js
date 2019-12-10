@@ -24,16 +24,16 @@ const child = {
     y: 400,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   },
   enter: {
     y: -10,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   }
 };

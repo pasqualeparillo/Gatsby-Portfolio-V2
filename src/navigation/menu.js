@@ -15,8 +15,8 @@ export default function Menu() {
         when: "afterChildren",
         staggerChildren: 0.2,
         type: "spring",
-        mass: 1,
-        damping: 40
+        mass: 0.5,
+        damping: 200
       }
     },
     enter: {
@@ -25,8 +25,8 @@ export default function Menu() {
         when: "beforeChildren",
         staggerChildren: 0.2,
         type: "spring",
-        mass: 1,
-        damping: 40
+        mass: 0.5,
+        damping: 200
       }
     }
   };

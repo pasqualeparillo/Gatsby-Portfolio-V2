@@ -11,7 +11,7 @@ export default function IntroAnimation({ variant, text, color }) {
         transform: "translateY(-10%)"
       }}
       initial={{ y: "100%" }}
-      transition={{ type: "spring", mass: 1, damping: 40 }}
+      transition={{ type: "spring", mass: 0.5, damping: 200 }}
     >
       {text}
     </motion.span>

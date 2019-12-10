@@ -8,8 +8,8 @@ const childTwo = {
     transition: {
       duration: 0.4,
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   },
   enter: {
@@ -17,8 +17,8 @@ const childTwo = {
     transition: {
       duration: 0.4,
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   }
 };

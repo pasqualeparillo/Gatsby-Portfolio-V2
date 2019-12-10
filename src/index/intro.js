@@ -30,16 +30,16 @@ const child = {
     y: 300,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   },
   enter: {
     y: 0,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40
+      mass: 0.5,
+      damping: 200
     }
   },
   initial: {
@@ -51,8 +51,8 @@ const childTwo = {
     y: 300,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.1
     }
   },
@@ -60,8 +60,8 @@ const childTwo = {
     y: 0,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.1
     }
   }
@@ -71,8 +71,8 @@ const childThree = {
     y: 300,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.2
     }
   },
@@ -80,8 +80,8 @@ const childThree = {
     y: 0,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.2
     }
   }
@@ -91,8 +91,8 @@ const childFour = {
     y: 300,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.3
     }
   },
@@ -100,8 +100,8 @@ const childFour = {
     y: 0,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.3
     }
   }
@@ -111,8 +111,8 @@ const childFive = {
     y: 300,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.4
     }
   },
@@ -120,8 +120,8 @@ const childFive = {
     y: 0,
     transition: {
       type: "spring",
-      mass: 1,
-      damping: 40,
+      mass: 0.5,
+      damping: 200,
       delay: 0.4
     }
   }
