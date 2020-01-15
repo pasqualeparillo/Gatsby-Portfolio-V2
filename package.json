@@ -43,9 +43,7 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  {
-  "browserslist": [">0.25%", "not dead"]
-  },
+  "browserslist": [">0.25%", "not dead"],
   "devDependencies": {
     "tailwindcss": "^1.0.6"
   }
