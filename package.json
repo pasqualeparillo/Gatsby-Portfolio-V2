@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Pasquale-Parillo-Portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Pasquale Parillo - Developer Portfolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Pasquale Parillo <patparillo@gmail.com>",
   "dependencies": {
     "framer-motion": "^1.6.15",
     "gatsby": "^2.0.119",
@@ -24,7 +24,9 @@
     "react-responsive": "^8.0.1"
   },
   "keywords": [
-    "gatsby"
+    "Portfolio",
+    "Pasquale Parillo",
+    "Deverloper"
   ],
   "license": "MIT",
   "scripts": {
@@ -36,10 +38,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/pasqualeparillo/Gatsby-Portfolio-V2"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  {
+  "browserslist": [">0.25%", "not dead"]
   },
   "devDependencies": {
     "tailwindcss": "^1.0.6"
