@@ -6,7 +6,7 @@
   "author": "Pasquale Parillo <patparillo@gmail.com>",
   "dependencies": {
     "framer-motion": "^1.6.15",
-    "gatsby": "^2.0.119",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-layout": "^1.1.13",
     "gatsby-plugin-manifest": "^2.0.17",
